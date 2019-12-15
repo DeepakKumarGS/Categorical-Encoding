@@ -1,0 +1,16 @@
+Try out catboost with bayessearchcv using the kaggle-days-paris-skopt-catboost-solution file in kaggle learn folder.
+
+Try out target encoding - https://www.kaggle.com/c/microsoft-malware-prediction/discussion/79045
+
+target encoding,label encoding for high cardinality - https://www.kaggle.com/fabiendaniel/detecting-malwares-with-lgbm
+
+mean-likelihood-encodings-a-comprehensive-study
+
+for col in ['original_language', 'collection_name', 'all_genres']:
+    le = LabelEncoder()
+    le.fit(list(train[col].fillna('')) + list(test[col].fillna('')))
+    train[col] = le.transform(train[col].fillna('').astype(str))
+    test[col] = le.transform(test[col].fillna('').astype(str))
+
+
+https://www.kaggle.com/humananalog/xgboost-lasso
