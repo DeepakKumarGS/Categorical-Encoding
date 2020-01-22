@@ -13,7 +13,7 @@ Frequency encoding colums with high cardinality - nom_0 to nom_9 , ord_0 to ord_
 
 LGBM with 5 fold cross validation .Parameters optimized through bayesian optimization 
 
-### Techniques with did not work 
+### Techniques which did not work 
 
 1.Feature engineering - Split ord_5 into two columns and frequency encode
 
